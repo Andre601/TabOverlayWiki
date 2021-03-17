@@ -816,6 +816,9 @@ Keep in mind you will need to define the server you want in the custom placehold
 
 [!]: ifATO
 
+We use the `server_tps_1` placeholder to get the TPS from the first minute.  
+This requires you to have both [[PlaceholderAPI]] and the `Server` Expansion installed on your server.
+
 The first placeholder `colored_tps` will check whether the server's tps is above 20, this will stop numbers from going higher and default back to `*20.00`:
 ```yaml
 customPlaceholders:
@@ -860,7 +863,6 @@ Now we can use the `colored_tps` placeholder to give TPS different colors:
 ```yaml
 - "&cTPS: ${colored_tps}"
 ```
-Note that we use `server_tps_1` which is a PlaceholderAPI placeholder and gives us the TPS of the first minute.
 [!]: endIF
 
 #### Creating Custom Prefixes - `${custom_prefix}`
